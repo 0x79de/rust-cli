@@ -1,9 +1,22 @@
 [package]
 name = "grrs"
 version = "0.1.0"
+authors = ["79de <0xaegean@gmail.com>"]
+licence = "MIT OR Apache-2.0"
+description = "Dosya aramak için tool"
+readme = "README.md"
+homapage = "https://github.com/79dev/rust-cli"
+repository = "https://github.com/79dev/rust-cli"
+keywords = ["cli", "search", "demo", "rust"]
+categories = ["command-line-utilities"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.79"
 clap = { version = "4.4.18", features = ["derive"] }
+
+[dev-dependencies]
+assert_cmd = "2.0.12"
+predicates = "3.0.4"
